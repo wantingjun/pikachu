@@ -1,0 +1,75 @@
+*{
+    box-sizing:border-box;
+}
+*::before{
+    box-sizing:border-box;
+}
+*::after{
+    box-sizing:border-box;
+}
+.skin{
+    position:relative;
+    background: yellow;
+}
+.nose{
+    border: 10px solid red;
+    border-color:red transparent blue transparent;
+    border-bottom:none;
+    width:0px;
+    height:0px;
+    position:absolute;
+    left:50%;
+    top:145px;
+    margin-left:-10px;
+}
+.yuan{
+    position:absolute;
+    width:20px;
+    height:6px;
+    /* border:1px solid green; */
+    top:-16px;
+    left:-10px;
+    border-radius:10px 10px 0 0;
+    background-color: red;
+}
+.eye{
+    border: 2px solid #000;
+    width:64px;
+    height:64px;
+    position:absolute;
+    left:50%;
+    top:100px;
+    margin-left:-32px;
+    background:#2e2e2e;
+    border-radius:50%
+}
+.eye::before{
+    content:'';
+    display:block;
+    border:2px solid #000;
+    width:25px;
+    height:25px;
+    background-color: white;
+    border-radius: 50%;
+    position:relative;
+    left:8px;
+    top:2px;
+
+}
+.eye.left{
+    transform:translateX(-100px);
+}
+.eye.right{
+    transform:translateX(100px);
+}
+.mouth{
+    border:1px solid red;
+    width:200px;
+    height:200px;
+    position:absolute;
+    top:170px;
+    left:50%;
+    margin-left:-100px;
+
+}
+/*# sourceMappingURL=index.HASH_REF_f0918a547ace1733ebc251b0de60a1d7.css.map */
